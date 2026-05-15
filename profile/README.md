@@ -1,42 +1,23 @@
 # Unpins
 
-[Unpins](https://unpins.org) is an organization dedicated to providing static binaries for Linux, macOS and Windows, built with **Nix** and **Flakes**. Our mission is to "unpin" your essential tools from the constraints of your host distribution's package manager and glibc version.
+Static, single-binary builds of common CLI tools for Linux, macOS, and Windows — built reproducibly with **Nix Flakes**, distributed through GitHub releases. No glibc pinning, no system dependencies, no daemons. Just download and run.
 
+→ Browse and install at **<https://unpins.org>**.
 
-## 🚀 The Philosophy
+## The installer
 
-Standard package managers often tie you to outdated versions. By leveraging Nix, we build self-contained binaries that run anywhere — from an ancient Debian stable to a minimalist container, a fresh macOS, or a vanilla Windows machine.
-
-- **Portable:** no dependencies, no daemons. Just download and run.
-- **Reproducible:** every binary is built via Nix Flakes for 100% auditability.
-- **GitHub-native:** binaries live in GitHub releases — the infrastructure you already trust.
-
-
-## 🛠 The Installer
-
-The [`unpin`](https://github.com/unpins/unpin) CLI is our lightweight package manager. It fetches binaries directly from GitHub releases, verifies the SHA256, and drops each tool in `PATH` ready to run.
+The [`unpin`](https://github.com/unpins/unpin) CLI fetches binaries from GitHub releases, verifies the SHA256, and drops each tool in `PATH` ready to run:
 
 ```bash
-# Install a tool from this org
-unpin install htop # or just unpin htop
-
-# Or any project from GitHub releases
-unpin install jgm/pandoc
-
-# Run once, without installing
-unpin run tree
+unpin install htop          # curated package from this org
+unpin install jgm/pandoc    # or any GitHub release
+unpin run tree              # run once, no install
 ```
 
+Install `unpin` itself: see <https://unpins.org>.
 
-## 📦 Repositories
+## For contributors
 
-Each repo hosts a single package recipe (one flake, one tool). The set is intentionally small and curated — focused on widely-used CLI utilities that don't already ship official portable binaries.
-
-Shared building blocks live in [`nix-lib`](https://github.com/unpins/nix-lib); CI glue in [`action-build`](https://github.com/unpins/action-build).
-
-
-## Status
-
-The `unpin` CLI works today. We're actively adding more packages.
+Each repo here is a single package recipe (one flake, one tool). Shared build helpers in [`nix-lib`](https://github.com/unpins/nix-lib) and [`action-build`](https://github.com/unpins/action-build); architecture, per-platform gotchas, and patch recipes in [`docs`](https://github.com/unpins/docs).
 
 Issues and PRs welcome on any repo.
