@@ -1,4 +1,8 @@
-# Unpins
+<p align="center">
+  <a href="https://unpins.org">
+    <img src="unpins-logo.svg" alt="unpins" width="360">
+  </a>
+</p>
 
 Static, single-binary builds of common CLI tools for Linux, macOS, and Windows — built reproducibly with **Nix Flakes**, distributed through GitHub releases. No glibc pinning, no system dependencies, no daemons. Just download and run.
 
