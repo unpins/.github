@@ -4,6 +4,10 @@
   </a>
 </p>
 
+<p align="center">
+  Unpin your tools from your OS
+</p>
+
 Static, single-binary builds of common CLI tools for Linux, macOS, and Windows — built reproducibly with **Nix Flakes**, distributed through GitHub releases. No glibc pinning, no system dependencies, no daemons. Just download and run.
 
 → Browse and install at **<https://unpins.org>**.
