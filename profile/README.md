@@ -8,11 +8,9 @@
   Unpin your programs from your OS
 </p>
 
-Common programs as single self-contained binaries, built natively for Linux, macOS, and Windows. unpins curates and builds them; the [`unpin`](https://github.com/unpins/unpin) CLI installs them, or anything from a GitHub release.
+Common programs as single self-contained binaries, built natively for Linux, macOS, and Windows. [unpins](https://unpins.org) curates and builds them; the [`unpin`](https://github.com/unpins/unpin) CLI installs them, or anything from a GitHub release.
 
 The catalog builds are reproducible from source and run on old or minimal systems, not just the latest OS.
-
-→ Browse and install at **<https://unpins.org>**.
 
 ## The installer
 
@@ -24,7 +22,7 @@ unpin install htop                 # install from the catalog
 unpin install BurntSushi/ripgrep   # install from any GitHub release
 ```
 
-Install `unpin` itself: see <https://unpins.org>.
+To install `unpin` itself, download a build from [unpins.org](https://unpins.org).
 
 ## For contributors
 
