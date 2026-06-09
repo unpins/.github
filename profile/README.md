@@ -10,7 +10,7 @@
 
 Common programs as single self-contained binaries, built natively for Linux, macOS, and Windows. [unpins](https://unpins.org) curates and builds them; the [`unpin`](https://github.com/unpins/unpin) CLI installs them, or anything from a GitHub release.
 
-The catalog builds are reproducible from source and run on old or minimal systems, not just the latest OS.
+The catalog — 70+ programs, from `ffmpeg` and `python` to `vim` and `jq` ([full list](https://unpins.org/packages.html)) — is reproducible from source, and the builds run on old or minimal systems, not just the latest OS.
 
 ## The installer
 
@@ -22,7 +22,15 @@ unpin install htop                 # install from the catalog
 unpin install BurntSushi/ripgrep   # install from any GitHub release
 ```
 
-To install `unpin` itself, download a build from [unpins.org](https://unpins.org).
+To install `unpin` itself (no root needed):
+
+```bash
+curl -fsSLo unpin "https://unpins.org/unpin-$(uname -m)-linux"   # …-darwin on macOS
+chmod +x unpin
+./unpin install
+```
+
+On Windows, fetch [unpin-x86_64-windows.exe](https://unpins.org/unpin-x86_64-windows.exe) and run `.\unpin.exe install`.
 
 ## For contributors
 
