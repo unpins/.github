@@ -8,9 +8,9 @@
   Unpin your programs from your OS
 </p>
 
-Common programs as single self-contained binaries, built natively for Linux, macOS, and Windows. [unpins](https://unpins.org) curates and builds them; the [`unpin`](https://github.com/unpins/unpin) CLI installs them, or anything from a GitHub release.
+Common programs as single self-contained binaries, built natively for Linux, macOS, and Windows. [unpins](https://unpins.org) curates and builds them; the [`unpin`](https://github.com/unpins/unpin) CLI installs them — or anything else published as a GitHub release.
 
-The catalog — 70+ programs, from `ffmpeg` and `python` to `vim` and `jq` ([full list](https://unpins.org/packages.html)) — is reproducible from source, and the builds run on old or minimal systems, not just the latest OS. Linux builds cover six architectures — x86_64, aarch64, armv7l, i686, ppc64le, and riscv64; macOS builds cover Intel and Apple Silicon; Windows is x86_64.
+The catalog has 70+ programs, from `ffmpeg` and `python` to `vim` and `jq` ([full list](https://unpins.org/packages.html)). Every build is reproducible from source and runs on old or minimal systems, not just the latest OS. Linux builds cover x86_64, aarch64, armv7l, i686, ppc64le, and riscv64; macOS covers Intel and Apple Silicon; Windows is x86_64.
 
 ## The installer
 
@@ -34,6 +34,6 @@ On Windows, fetch [unpin-x86_64-windows.exe](https://unpins.org/unpin-x86_64-win
 
 ## For contributors
 
-Each repo here is a single package recipe (one flake, one binary). Shared build helpers in [`nix-lib`](https://github.com/unpins/nix-lib) and [`action-build`](https://github.com/unpins/action-build); architecture, per-platform gotchas, and patch recipes in [`docs`](https://github.com/unpins/docs).
+Each repo here is a single package recipe (one flake, one binary). Shared build helpers live in [`nix-lib`](https://github.com/unpins/nix-lib) and [`action-build`](https://github.com/unpins/action-build); architecture notes, per-platform gotchas, and patch recipes are in [`docs`](https://github.com/unpins/docs).
 
 Issues and PRs welcome on any repo.
