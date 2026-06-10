@@ -10,7 +10,7 @@
 
 Common programs as single self-contained binaries, built natively for Linux, macOS, and Windows. [unpins](https://unpins.org) curates and builds them; the [`unpin`](https://github.com/unpins/unpin) CLI installs them, or anything from a GitHub release.
 
-The catalog — 70+ programs, from `ffmpeg` and `python` to `vim` and `jq` ([full list](https://unpins.org/packages.html)) — is reproducible from source, and the builds run on old or minimal systems, not just the latest OS.
+The catalog — 70+ programs, from `ffmpeg` and `python` to `vim` and `jq` ([full list](https://unpins.org/packages.html)) — is reproducible from source, and the builds run on old or minimal systems, not just the latest OS. Linux builds cover six architectures — x86_64, aarch64, armv7l, i686, ppc64le, and riscv64; macOS builds cover Intel and Apple Silicon; Windows is x86_64.
 
 ## The installer
 
